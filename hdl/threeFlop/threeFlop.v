@@ -23,7 +23,7 @@ module threeFlop (clk, in, out);
    output out;
 
    wire data;
-   reg dataIn, middle, dataOut;
+   reg dataIn, middle, middle1,  dataOut;
 
    assign out = dataOut;
 
@@ -31,6 +31,7 @@ module threeFlop (clk, in, out);
    begin
       dataIn <= in;
       middle <= dataIn;
-      dataOut <= middle;
+      middle1<= middle;
+      dataOut <= middle1;
    end
 endmodule
